@@ -46,8 +46,8 @@ namespace AgroganaderaMiFinca
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtDireccionFinca = new System.Windows.Forms.Button();
-            this.btnRegistrarFinca = new System.Windows.Forms.Button();
+            this.btnAtras = new System.Windows.Forms.Button();
+            this.btnRegistrarDueno = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.label8 = new System.Windows.Forms.Label();
             this.pnlDueno.SuspendLayout();
@@ -63,6 +63,7 @@ namespace AgroganaderaMiFinca
             this.txtNombreDueno.Size = new System.Drawing.Size(164, 31);
             this.txtNombreDueno.TabIndex = 7;
             this.txtNombreDueno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNombreDueno.TextChanged += new System.EventHandler(this.txtNombreDueno_TextChanged);
             // 
             // label1
             // 
@@ -117,6 +118,7 @@ namespace AgroganaderaMiFinca
             this.txtNumeroCelularDueno.Size = new System.Drawing.Size(179, 31);
             this.txtNumeroCelularDueno.TabIndex = 18;
             this.txtNumeroCelularDueno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNumeroCelularDueno.TextChanged += new System.EventHandler(this.txtNumeroCelularDueno_TextChanged);
             // 
             // txtCorreoElectronicoDueno
             // 
@@ -127,6 +129,7 @@ namespace AgroganaderaMiFinca
             this.txtCorreoElectronicoDueno.Size = new System.Drawing.Size(179, 31);
             this.txtCorreoElectronicoDueno.TabIndex = 17;
             this.txtCorreoElectronicoDueno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtCorreoElectronicoDueno.TextChanged += new System.EventHandler(this.txtCorreoElectronicoDueno_TextChanged);
             // 
             // txtIdentificacionDueno
             // 
@@ -148,6 +151,7 @@ namespace AgroganaderaMiFinca
             this.txtSegundoApellidoDueno.Size = new System.Drawing.Size(201, 31);
             this.txtSegundoApellidoDueno.TabIndex = 15;
             this.txtSegundoApellidoDueno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSegundoApellidoDueno.TextChanged += new System.EventHandler(this.txtSegundoApellidoDueno_TextChanged);
             // 
             // txtPrimerApellidoDueno
             // 
@@ -158,6 +162,7 @@ namespace AgroganaderaMiFinca
             this.txtPrimerApellidoDueno.Size = new System.Drawing.Size(179, 31);
             this.txtPrimerApellidoDueno.TabIndex = 14;
             this.txtPrimerApellidoDueno.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPrimerApellidoDueno.TextChanged += new System.EventHandler(this.txtPrimerApellidoDueno_TextChanged);
             // 
             // label7
             // 
@@ -225,34 +230,34 @@ namespace AgroganaderaMiFinca
             this.label2.TabIndex = 8;
             this.label2.Text = "Nombre";
             // 
-            // txtDireccionFinca
+            // btnAtras
             // 
-            this.txtDireccionFinca.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtDireccionFinca.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.txtDireccionFinca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.txtDireccionFinca.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDireccionFinca.ForeColor = System.Drawing.Color.Gray;
-            this.txtDireccionFinca.Location = new System.Drawing.Point(644, 457);
-            this.txtDireccionFinca.Name = "txtDireccionFinca";
-            this.txtDireccionFinca.Size = new System.Drawing.Size(178, 40);
-            this.txtDireccionFinca.TabIndex = 20;
-            this.txtDireccionFinca.Text = "Atrás";
-            this.txtDireccionFinca.UseVisualStyleBackColor = false;
-            this.txtDireccionFinca.Click += new System.EventHandler(this.txtDireccionFinca_Click);
+            this.btnAtras.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnAtras.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAtras.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAtras.ForeColor = System.Drawing.Color.Gray;
+            this.btnAtras.Location = new System.Drawing.Point(644, 457);
+            this.btnAtras.Name = "btnAtras";
+            this.btnAtras.Size = new System.Drawing.Size(178, 40);
+            this.btnAtras.TabIndex = 20;
+            this.btnAtras.Text = "Atrás";
+            this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.txtDireccionFinca_Click);
             // 
-            // btnRegistrarFinca
+            // btnRegistrarDueno
             // 
-            this.btnRegistrarFinca.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnRegistrarFinca.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnRegistrarFinca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegistrarFinca.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrarFinca.ForeColor = System.Drawing.Color.Gray;
-            this.btnRegistrarFinca.Location = new System.Drawing.Point(13, 457);
-            this.btnRegistrarFinca.Name = "btnRegistrarFinca";
-            this.btnRegistrarFinca.Size = new System.Drawing.Size(178, 40);
-            this.btnRegistrarFinca.TabIndex = 21;
-            this.btnRegistrarFinca.Text = "Registrar";
-            this.btnRegistrarFinca.UseVisualStyleBackColor = false;
+            this.btnRegistrarDueno.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnRegistrarDueno.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnRegistrarDueno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegistrarDueno.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegistrarDueno.ForeColor = System.Drawing.Color.Gray;
+            this.btnRegistrarDueno.Location = new System.Drawing.Point(13, 457);
+            this.btnRegistrarDueno.Name = "btnRegistrarDueno";
+            this.btnRegistrarDueno.Size = new System.Drawing.Size(178, 40);
+            this.btnRegistrarDueno.TabIndex = 21;
+            this.btnRegistrarDueno.Text = "Registrar";
+            this.btnRegistrarDueno.UseVisualStyleBackColor = false;
             // 
             // errorProvider1
             // 
@@ -276,8 +281,8 @@ namespace AgroganaderaMiFinca
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(834, 509);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnRegistrarFinca);
-            this.Controls.Add(this.txtDireccionFinca);
+            this.Controls.Add(this.btnRegistrarDueno);
+            this.Controls.Add(this.btnAtras);
             this.Controls.Add(this.pnlDueno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -310,8 +315,8 @@ namespace AgroganaderaMiFinca
         private System.Windows.Forms.MaskedTextBox txtIdentificacionDueno;
         private System.Windows.Forms.MaskedTextBox txtSegundoApellidoDueno;
         private System.Windows.Forms.MaskedTextBox txtPrimerApellidoDueno;
-        private System.Windows.Forms.Button txtDireccionFinca;
-        private System.Windows.Forms.Button btnRegistrarFinca;
+        private System.Windows.Forms.Button btnAtras;
+        private System.Windows.Forms.Button btnRegistrarDueno;
         private System.Windows.Forms.ErrorProvider errorProvider1;
         private System.Windows.Forms.Label label8;
     }

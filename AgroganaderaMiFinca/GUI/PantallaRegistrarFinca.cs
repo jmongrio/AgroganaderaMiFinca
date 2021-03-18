@@ -12,6 +12,8 @@ namespace AgroganaderaMiFinca
 {
     public partial class PantallaRegistrarFinca : Form
     {
+        Validaciones v = new Validaciones();
+
         public PantallaRegistrarFinca()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace AgroganaderaMiFinca
 
         private void txtNumeroFinca_TextChanged(object sender, EventArgs e)
         {
-            comprobarNumeros(txtNumeroFinca);
+            v.comprobarNumeros(txtNumeroFinca, btnRegistrarFinca, errorProvider1);
         }
 
         private void PantallaRegistrarFinca_Load(object sender, EventArgs e)
@@ -35,66 +37,22 @@ namespace AgroganaderaMiFinca
 
         private void txtTamanoFinca_TextChanged(object sender, EventArgs e)
         {
-            comprobarNumeros(txtTamanoFinca);
+            v.comprobarNumeros(txtTamanoFinca, btnRegistrarFinca, errorProvider1);
         }
 
         private void txtTelefono_TextAlignChanged(object sender, EventArgs e)
         {
-            comprobarNumeros(txtTelefono);
+            v.comprobarNumeros(txtTelefono, btnRegistrarFinca, errorProvider1);
         }
 
         private void txtNombreFinca_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            comprobarEspaciosVacios(txtNombreFinca);
+            v.comprobarEspaciosVacios(txtNombreFinca, btnRegistrarFinca, errorProvider1);
         }
 
         private void maskedTextBox4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            comprobarEspaciosVacios(txtDireccionFinca);
-        }
-
-        /*
-        * Se valida si el usuario esta ingresando unicamente números.         
-        */
-        void comprobarNumeros(MaskedTextBox nombre)
-        {
-            if (nombre.Text.Trim() != string.Empty && nombre.Text.All(Char.IsDigit))
-            {
-                btnRegistrarFinca.Enabled = true;
-                errorProvider1.SetError(nombre, "");
-            }
-            else
-            {
-                if (!(nombre.Text.All(Char.IsDigit)))
-                {
-                    errorProvider1.SetError(nombre, "Este espacio sólo debe contener números.");
-                }
-                else
-                {
-                    errorProvider1.SetError(nombre, "Debe introducir algún dato.");
-                }
-                btnRegistrarFinca.Enabled = false;
-                nombre.Focus();
-            }
-        }
-
-        /*
-        * Se valida si el usuario esta dejando espacios vacios.         
-        */
-        void comprobarEspaciosVacios(MaskedTextBox nombre)
-        {
-            if (nombre.Text.Trim() != string.Empty)
-            {
-                btnRegistrarFinca.Enabled = true;
-                errorProvider1.SetError(nombre, "");
-            }
-            else
-            {
-                errorProvider1.SetError(nombre, "Debe introducir algún dato.");
-
-                btnRegistrarFinca.Enabled = false;
-                nombre.Focus();
-            }
+            v.comprobarEspaciosVacios(txtDireccionFinca, btnRegistrarFinca, errorProvider1);
         }
         //Programar botón
     }

@@ -75,6 +75,7 @@
     <Compile Include="GUI\PantallaRegistrarDueno.Designer.cs">
       <DependentUpon>PantallaRegistrarDueno.cs</DependentUpon>
     </Compile>
+    <Compile Include="Clases\Validaciones.cs" />
     <EmbeddedResource Include="GUI\PantallaMenu.resx">
       <DependentUpon>PantallaMenu.cs</DependentUpon>
     </EmbeddedResource>

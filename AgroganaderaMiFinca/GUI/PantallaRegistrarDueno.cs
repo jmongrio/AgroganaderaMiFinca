@@ -12,6 +12,8 @@ namespace AgroganaderaMiFinca
 {
     public partial class PantallaRegistrarDueno : Form
     {
+        Validaciones v = new Validaciones();
+
         public PantallaRegistrarDueno()
         {
             InitializeComponent();
@@ -24,32 +26,35 @@ namespace AgroganaderaMiFinca
 
         private void txtIdentificacionDueno_TextChanged(object sender, EventArgs e)
         {
-            comprobarNumeros(txtIdentificacionDueno);
+            v.comprobarNumeros(txtIdentificacionDueno, btnRegistrarDueno, errorProvider1);
         }
 
-        /*
-         * Realiza la verificación de las entradas númericas
-         */
-        void comprobarNumeros(MaskedTextBox nombre)
+        private void txtNombreDueno_TextChanged(object sender, EventArgs e)
         {
-            if (nombre.Text.Trim() != string.Empty && nombre.Text.All(Char.IsDigit))
-            {
-                btnRegistrarFinca.Enabled = true;
-                errorProvider1.SetError(nombre, "");
-            }
-            else
-            {
-                if (!(nombre.Text.All(Char.IsDigit)))
-                {
-                    errorProvider1.SetError(nombre, "Este espacio sólo debe contener números.");
-                }
-                else
-                {
-                    errorProvider1.SetError(nombre, "Debe introducir algún dato.");
-                }
-                btnRegistrarFinca.Enabled = false;
-                nombre.Focus();
-            }
+            v.comprobarEspaciosVacios(txtIdentificacionDueno, btnRegistrarDueno, errorProvider1);
         }
-    }
+
+        private void txtPrimerApellidoDueno_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarEspaciosVacios(txtPrimerApellidoDueno, btnRegistrarDueno, errorProvider1);
+        }
+
+        private void txtSegundoApellidoDueno_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarEspaciosVacios(txtSegundoApellidoDueno, btnRegistrarDueno, errorProvider1);
+        }
+
+        private void txtCorreoElectronicoDueno_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarEspaciosVacios(txtCorreoElectronicoDueno, btnRegistrarDueno, errorProvider1);
+        }
+
+        private void txtNumeroCelularDueno_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarNumeros(txtNumeroCelularDueno, btnRegistrarDueno, errorProvider1);
+        }
+        //Programar finca
+        //Programar boton Registrar
+
+    }//Fin PantallaRegistrarDueno
 }
