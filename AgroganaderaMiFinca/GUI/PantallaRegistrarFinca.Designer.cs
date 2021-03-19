@@ -139,12 +139,12 @@ namespace AgroganaderaMiFinca
             this.txtTamanoFinca.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.txtTamanoFinca.TextChanged += new System.EventHandler(this.txtTamanoFinca_TextChanged);
             // 
-            // maskedTextBox4
+            // txtDireccionFinca
             // 
             this.txtDireccionFinca.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtDireccionFinca.ForeColor = System.Drawing.Color.Gray;
             this.txtDireccionFinca.Location = new System.Drawing.Point(265, 181);
-            this.txtDireccionFinca.Name = "maskedTextBox4";
+            this.txtDireccionFinca.Name = "txtDireccionFinca";
             this.txtDireccionFinca.Size = new System.Drawing.Size(226, 31);
             this.txtDireccionFinca.TabIndex = 8;
             this.txtDireccionFinca.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -172,7 +172,7 @@ namespace AgroganaderaMiFinca
             this.label6.TabIndex = 10;
             this.label6.Text = "héctareas.";
             // 
-            // txtDireccionFinca
+            // btnAtras
             // 
             this.btnAtras.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnAtras.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -180,7 +180,7 @@ namespace AgroganaderaMiFinca
             this.btnAtras.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.Gray;
             this.btnAtras.Location = new System.Drawing.Point(644, 457);
-            this.btnAtras.Name = "txtDireccionFinca";
+            this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(178, 40);
             this.btnAtras.TabIndex = 11;
             this.btnAtras.Text = "Atrás";

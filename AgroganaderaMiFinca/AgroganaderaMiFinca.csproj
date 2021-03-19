@@ -66,6 +66,12 @@
     <Compile Include="GUI\PantallaRegistrarFinca.Designer.cs">
       <DependentUpon>PantallaRegistrarFinca.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\PantallaRegistrarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\PantallaRegistrarEmpleado.Designer.cs">
+      <DependentUpon>PantallaRegistrarEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\RazaAnimal.cs" />
@@ -78,6 +84,9 @@
     <Compile Include="Clases\Validaciones.cs" />
     <EmbeddedResource Include="GUI\PantallaMenu.resx">
       <DependentUpon>PantallaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\PantallaRegistrarEmpleado.resx">
+      <DependentUpon>PantallaRegistrarEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\PantallaRegistrarFinca.resx">
       <DependentUpon>PantallaRegistrarFinca.cs</DependentUpon>
