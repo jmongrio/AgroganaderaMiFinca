@@ -24,14 +24,14 @@ namespace AgroganaderaMiFinca
             v.comprobarNumeros(txtIdentificacionEmpleado, btnRegistrarEmpleado, errorProvider1);
         }
 
-        private void p_TextChanged(object sender, EventArgs e)
-        {
-            v.comprobarNumeros(txtIdentificacionEmpleado, btnRegistrarEmpleado, errorProvider1);
-        }
-
         private void txtSalarioEmpleado_TextChanged(object sender, EventArgs e)
         {
             v.comprobarNumeros(txtSalarioEmpleado, btnRegistrarEmpleado, errorProvider1);
+        }
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

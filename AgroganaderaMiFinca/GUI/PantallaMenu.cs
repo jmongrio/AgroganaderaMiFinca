@@ -58,5 +58,17 @@ namespace AgroganaderaMiFinca
             using (PantallaRegistrarDueno registroDueno = new PantallaRegistrarDueno())
                 registroDueno.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            using (PantallaRegistrarEmpleado registroEmpleado = new PantallaRegistrarEmpleado())
+                registroEmpleado.ShowDialog();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            using (PantallaRegistrarRaza registroRaza = new PantallaRegistrarRaza())
+                registroRaza.ShowDialog();
+        }
     }
 }

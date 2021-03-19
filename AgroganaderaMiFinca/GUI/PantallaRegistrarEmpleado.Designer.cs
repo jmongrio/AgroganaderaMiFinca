@@ -226,6 +226,7 @@ namespace AgroganaderaMiFinca
             this.btnAtras.TabIndex = 22;
             this.btnAtras.Text = "Atrás";
             this.btnAtras.UseVisualStyleBackColor = false;
+            this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
             // errorProvider1
             // 
