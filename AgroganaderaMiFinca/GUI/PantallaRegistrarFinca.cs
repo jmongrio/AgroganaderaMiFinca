@@ -54,6 +54,6 @@ namespace AgroganaderaMiFinca
         {
             v.comprobarEspaciosVacios(txtDireccionFinca, btnRegistrarFinca, errorProvider1);
         }
-        //Programar botón
+        //Programar botón y validar si los campode de texto estan todos llenos
     }
 }

@@ -54,7 +54,7 @@ namespace AgroganaderaMiFinca
             v.comprobarNumeros(txtNumeroCelularDueno, btnRegistrarDueno, errorProvider1);
         }
         //Programar finca
-        //Programar boton Registrar
+        //Programar botón y validar si los campode de texto estan todos llenos
 
     }//Fin PantallaRegistrarDueno
 }

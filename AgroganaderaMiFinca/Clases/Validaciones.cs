@@ -47,7 +47,6 @@ namespace AgroganaderaMiFinca
             else
             {
                 error.SetError(nombre, "Debe introducir algún dato.");
-
                 boton.Enabled = false;
                 nombre.Focus();
             }
