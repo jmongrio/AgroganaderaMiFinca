@@ -57,7 +57,7 @@ namespace AgroganaderaMiFinca
             // 
             // razaAnimalBindingSource
             // 
-            this.razaAnimalBindingSource.DataSource = typeof(AgroganaderaMiFinca.RazaAnimal);
+            this.razaAnimalBindingSource.DataSource = typeof(AgroganaderaMiFinca.Finca);
             // 
             // codigoRazaDataGridViewTextBoxColumn
             // 

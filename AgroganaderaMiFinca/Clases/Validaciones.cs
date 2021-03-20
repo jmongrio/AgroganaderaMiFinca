@@ -17,7 +17,6 @@ namespace AgroganaderaMiFinca
             if (nombre.Text.Trim() != string.Empty && nombre.Text.All(Char.IsDigit))
             {
                 error.SetError(nombre, "");
-                boton.Enabled = false;
             }
             else
             {
@@ -29,7 +28,6 @@ namespace AgroganaderaMiFinca
                 {
                     error.SetError(nombre, "Debe introducir algún dato.");
                 }
-                boton.Enabled = false;
                 nombre.Focus();
             }
         }
@@ -42,12 +40,10 @@ namespace AgroganaderaMiFinca
             if (nombre.Text.Trim() != string.Empty)
             {
                 error.SetError(nombre, "");
-                boton.Enabled = true;
             }
             else
             {
                 error.SetError(nombre, "Debe introducir algún dato.");
-                boton.Enabled = false;
                 nombre.Focus();                
             }
         }

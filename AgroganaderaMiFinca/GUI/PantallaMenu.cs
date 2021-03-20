@@ -22,7 +22,14 @@ namespace AgroganaderaMiFinca
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();                        
+            string mensaje = "¿Esta realmente seguro que desea salir?";
+            MessageBoxButtons botones = MessageBoxButtons.YesNo;
+            DialogResult respuesta = MessageBox.Show(mensaje, "Salir", botones);
+
+            if(respuesta == DialogResult.Yes)
+            {
+                this.Close();
+            }            
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AgroganaderaMiFinca
 {
-    class Finca
+    public class Finca
     {
         private int numeroFinca;
         private string nombreFinca;
