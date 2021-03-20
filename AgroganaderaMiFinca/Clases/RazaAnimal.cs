@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AgroganaderaMiFinca
 {
-    class RazaAnimal
+    public class RazaAnimal
     {
         private int codigoRaza;
         private string descrpcionRaza;

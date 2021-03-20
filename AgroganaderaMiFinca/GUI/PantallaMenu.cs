@@ -12,6 +12,9 @@ namespace AgroganaderaMiFinca
 {
     public partial class PantallaMenu : Form
     {
+        public RazaAnimal[] listaRazaAnimal = new RazaAnimal[10];
+        public int contadorRazaAnimal = 0;
+
         public PantallaMenu()
         {
             InitializeComponent();
@@ -19,38 +22,13 @@ namespace AgroganaderaMiFinca
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnlMostrar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pnlRegistro_Paint(object sender, PaintEventArgs e)
-        {
-
+            this.Close();                        
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             using (PantallaRegistrarFinca registroFinca = new PantallaRegistrarFinca())
-                registroFinca.ShowDialog();
+                registroFinca.ShowDialog();                
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -69,6 +47,24 @@ namespace AgroganaderaMiFinca
         {
             using (PantallaRegistrarRaza registroRaza = new PantallaRegistrarRaza())
                 registroRaza.ShowDialog();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (PantallaRegistrarAnimal registroAnimal = new PantallaRegistrarAnimal())
+                registroAnimal.ShowDialog();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            using (PantallaMostrarFinca mostrarFinca = new PantallaMostrarFinca())
+                mostrarFinca.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {            
+            using (PantallaMostrarRaza mostrarRaza = new PantallaMostrarRaza())
+                mostrarRaza.ShowDialog();
         }
     }
 }
