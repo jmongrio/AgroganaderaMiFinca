@@ -14,6 +14,9 @@ namespace AgroganaderaMiFinca
     {
         Validaciones v = new Validaciones();
 
+        Finca[] listaFinca = new Finca[10];
+        int contadorFinca = 0;
+
         public PantallaRegistrarFinca()
         {
             InitializeComponent();
@@ -29,31 +32,117 @@ namespace AgroganaderaMiFinca
             v.comprobarNumeros(txtNumeroFinca, btnRegistrarFinca, errorProvider1);
         }
 
-        private void PantallaRegistrarFinca_Load(object sender, EventArgs e)
-        {
-            btnRegistrarFinca.Enabled = false;
-            txtTelefono.Mask = "0000-0000";
-        }
-
         private void txtTamanoFinca_TextChanged(object sender, EventArgs e)
         {
             v.comprobarNumeros(txtTamanoFinca, btnRegistrarFinca, errorProvider1);
         }
 
-        private void txtTelefono_TextAlignChanged(object sender, EventArgs e)
-        {
-            v.comprobarNumeros(txtTelefono, btnRegistrarFinca, errorProvider1);
-        }
-
-        private void txtNombreFinca_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void txtNombreFinca_TextChanged(object sender, EventArgs e)
         {
             v.comprobarEspaciosVacios(txtNombreFinca, btnRegistrarFinca, errorProvider1);
         }
 
-        private void maskedTextBox4_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
+        private void txtDireccionFinca_TextChanged(object sender, EventArgs e)
         {
             v.comprobarEspaciosVacios(txtDireccionFinca, btnRegistrarFinca, errorProvider1);
         }
-        //Programar botón y validar si los campode de texto estan todos llenos
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarNumeros(txtTelefono, btnRegistrarFinca, errorProvider1);
+        }
+
+        public Finca RegistrarRazaAnimal()
+        {
+            Finca nuevaFinca = new Finca();
+            
+            try
+            {
+                nuevaFinca.NumeroFinca = Convert.ToInt32(txtNumeroFinca.Text);
+                nuevaFinca.NombreFinca = txtNombreFinca.Text;
+                nuevaFinca.TamanoFinca = Convert.ToInt32(txtTamanoFinca.Text);
+                nuevaFinca.DireccionFinca = txtDireccionFinca.Text;
+                nuevaFinca.Telefono = Convert.ToInt32(txtTelefono.Text);
+            }
+            catch(Exception e)
+            {
+                string mensaje = "Ha ocurrido un error: " + e;
+                MessageBoxButtons botones = MessageBoxButtons.OK;
+                MessageBox.Show(mensaje, "Error", botones);
+            }           
+
+            return nuevaFinca;
+        }
+
+        private void btnRegistrarFinca_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                if (ComprobarEspaciosVacios() == true)
+                {
+                    errorProvider1.SetError(btnRegistrarFinca, "");
+
+                    if (contadorFinca != 10)
+                    {
+                        int n = dgvFinca.Rows.Add();
+
+                        listaFinca[contadorFinca] = RegistrarRazaAnimal();
+
+                        dgvFinca.Rows[n].Cells[0].Value = listaFinca[contadorFinca].NumeroFinca;
+                        dgvFinca.Rows[n].Cells[1].Value = listaFinca[contadorFinca].NombreFinca;
+                        dgvFinca.Rows[n].Cells[2].Value = listaFinca[contadorFinca].TamanoFinca;
+                        dgvFinca.Rows[n].Cells[3].Value = listaFinca[contadorFinca].DireccionFinca;
+                        dgvFinca.Rows[n].Cells[4].Value = listaFinca[contadorFinca].Telefono;
+
+                        contadorFinca++;
+
+                        LimpiarCampos();
+                    }
+                    else
+                    {
+                        string mensaje = "Se ha llegado al número maximo de fincas (10).";
+                        MessageBoxButtons botones = MessageBoxButtons.OK;
+                        MessageBox.Show(mensaje, "Error", botones);
+                    }
+                }
+                else
+                {
+                    string mensaje = "Existen espacios sin llenar.";
+                    MessageBoxButtons botones = MessageBoxButtons.OK;
+                    MessageBox.Show(mensaje, "Error", botones);
+                    errorProvider1.SetError(btnRegistrarFinca, "Existen espacios sin llenar.");
+                }
+            }
+            catch(Exception i)
+            {
+                string mensaje = "Ha ocurrido un error: " + i;
+                MessageBoxButtons botones = MessageBoxButtons.OK;
+                MessageBox.Show(mensaje, "Error", botones);
+            }
+            
+        }
+
+        public bool ComprobarEspaciosVacios()
+        {
+            bool vacio = false;
+            if((txtNumeroFinca.Text.Trim() != string.Empty) && (txtNombreFinca.Text.Trim() != string.Empty) && 
+                (txtTamanoFinca.Text.Trim() != string.Empty) && (txtDireccionFinca.Text.Trim() != string.Empty) && 
+                (txtTelefono.Text.Trim() != string.Empty))
+            {
+                vacio = true;
+            }
+
+            return vacio;
+        }
+
+        public void LimpiarCampos()
+        {
+            txtNumeroFinca.Text = "";
+            txtNombreFinca.Text = "";
+            txtTamanoFinca.Text = "";
+            txtDireccionFinca.Text = "";
+            txtTelefono.Text = "";
+        }
     }
 }
