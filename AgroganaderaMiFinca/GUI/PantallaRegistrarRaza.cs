@@ -14,6 +14,8 @@ namespace AgroganaderaMiFinca
     {
         Validaciones v = new Validaciones();
 
+        PantallaMenu pm = new PantallaMenu();
+
         public PantallaRegistrarRaza()
         {
             InitializeComponent();
@@ -21,6 +23,8 @@ namespace AgroganaderaMiFinca
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
+            
+
             this.Close();
         }
 
@@ -53,6 +57,34 @@ namespace AgroganaderaMiFinca
             }
         }
 
+        /*
+         * RegistrarRazaAnimal()
+         * Se crea un objeto 'nuevaRazaAnimal' que almacena los datos que se solicitan.
+         * al final regresa los datos guardados en nuevaRazaAnimal.
+         * Se puede almacenar en un array de tipo RazaAnimal.
+         */
+        public RazaAnimal RegistrarRazaAnimal()
+        {
+            RazaAnimal nuevaRazaAnimal = new RazaAnimal();
 
+            nuevaRazaAnimal.CodigoRaza = Convert.ToInt32(txtCodigoRaza.Text);
+            nuevaRazaAnimal.DescrpcionRaza = txtDescripcionRaza.Text;
+
+            return nuevaRazaAnimal;
+        }
+
+        public void btnRegistrarRaza_Click(object sender, EventArgs e)
+        {
+            if (pm.listaRazaAnimal.Length == pm.contadorRazaAnimal)
+            {
+                //Err
+                errorProvider1.SetError(btnRegistrarRaza, "¡Ya no quedan espacios para guardar¡");
+            }
+            else
+            {
+                pm.listaRazaAnimal[pm.contadorRazaAnimal] = RegistrarRazaAnimal(); ;
+                pm.contadorRazaAnimal++;
+            }
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace AgroganaderaMiFinca
 {
     public partial class PantallaRegistrarAnimal : Form
     {
+        Validaciones v = new Validaciones();
         public PantallaRegistrarAnimal()
         {
             InitializeComponent();
@@ -20,6 +21,16 @@ namespace AgroganaderaMiFinca
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtIdentificacionAnimal_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarNumeros(txtIdentificacionAnimal, btnRegistrarAnimal, errorProvider1);
+        }
+
+        private void txtFechaNacimientoAnimal_TextChanged(object sender, EventArgs e)
+        {
+            v.comprobarNumeros(txtFechaNacimientoAnimal, btnRegistrarAnimal, errorProvider1);
         }
     }
 }

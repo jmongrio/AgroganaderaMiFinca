@@ -132,6 +132,7 @@ namespace AgroganaderaMiFinca
             this.btnRegistrarRaza.TabIndex = 25;
             this.btnRegistrarRaza.Text = "Registrar";
             this.btnRegistrarRaza.UseVisualStyleBackColor = false;
+            this.btnRegistrarRaza.Click += new System.EventHandler(this.btnRegistrarRaza_Click);
             // 
             // btnAtras
             // 
