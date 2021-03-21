@@ -29,23 +29,18 @@ namespace AgroganaderaMiFinca
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaMostrarFinca));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dgvFinca = new System.Windows.Forms.DataGridView();
             this.btnActualizarFincas = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
-            this.fincaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.numeroFincaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreFincaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tamanoFincaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.direccionFincaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefonoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvFinca = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fincaBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -56,40 +51,6 @@ namespace AgroganaderaMiFinca
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(798, 456);
             this.panel1.TabIndex = 0;
-            // 
-            // dgvFinca
-            // 
-            this.dgvFinca.AutoGenerateColumns = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFinca.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvFinca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvFinca.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.numeroFincaDataGridViewTextBoxColumn,
-            this.nombreFincaDataGridViewTextBoxColumn,
-            this.tamanoFincaDataGridViewTextBoxColumn,
-            this.direccionFincaDataGridViewTextBoxColumn,
-            this.telefonoDataGridViewTextBoxColumn});
-            this.dgvFinca.DataSource = this.fincaBindingSource;
-            this.dgvFinca.Location = new System.Drawing.Point(29, 17);
-            this.dgvFinca.Name = "dgvFinca";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Gray;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFinca.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvFinca.RowHeadersWidth = 51;
-            this.dgvFinca.RowTemplate.Height = 24;
-            this.dgvFinca.Size = new System.Drawing.Size(705, 390);
-            this.dgvFinca.TabIndex = 0;
             // 
             // btnActualizarFincas
             // 
@@ -105,6 +66,7 @@ namespace AgroganaderaMiFinca
             this.btnActualizarFincas.TabIndex = 25;
             this.btnActualizarFincas.Text = "Actualizar";
             this.btnActualizarFincas.UseVisualStyleBackColor = false;
+            this.btnActualizarFincas.Click += new System.EventHandler(this.btnActualizarFincas_Click);
             // 
             // btnAtras
             // 
@@ -122,49 +84,56 @@ namespace AgroganaderaMiFinca
             this.btnAtras.UseVisualStyleBackColor = false;
             this.btnAtras.Click += new System.EventHandler(this.btnAtras_Click);
             // 
-            // fincaBindingSource
+            // dgvFinca
             // 
-            this.fincaBindingSource.DataSource = typeof(AgroganaderaMiFinca.Finca);
+            this.dgvFinca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFinca.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5});
+            this.dgvFinca.Location = new System.Drawing.Point(27, 25);
+            this.dgvFinca.Name = "dgvFinca";
+            this.dgvFinca.RowHeadersWidth = 51;
+            this.dgvFinca.RowTemplate.Height = 24;
+            this.dgvFinca.Size = new System.Drawing.Size(740, 405);
+            this.dgvFinca.TabIndex = 0;
             // 
-            // numeroFincaDataGridViewTextBoxColumn
+            // Column1
             // 
-            this.numeroFincaDataGridViewTextBoxColumn.DataPropertyName = "NumeroFinca";
-            this.numeroFincaDataGridViewTextBoxColumn.HeaderText = "NumeroFinca";
-            this.numeroFincaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.numeroFincaDataGridViewTextBoxColumn.Name = "numeroFincaDataGridViewTextBoxColumn";
-            this.numeroFincaDataGridViewTextBoxColumn.Width = 125;
+            this.Column1.HeaderText = "Id";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
-            // nombreFincaDataGridViewTextBoxColumn
+            // Column2
             // 
-            this.nombreFincaDataGridViewTextBoxColumn.DataPropertyName = "NombreFinca";
-            this.nombreFincaDataGridViewTextBoxColumn.HeaderText = "NombreFinca";
-            this.nombreFincaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.nombreFincaDataGridViewTextBoxColumn.Name = "nombreFincaDataGridViewTextBoxColumn";
-            this.nombreFincaDataGridViewTextBoxColumn.Width = 125;
+            this.Column2.HeaderText = "Nombre";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
-            // tamanoFincaDataGridViewTextBoxColumn
+            // Column3
             // 
-            this.tamanoFincaDataGridViewTextBoxColumn.DataPropertyName = "TamanoFinca";
-            this.tamanoFincaDataGridViewTextBoxColumn.HeaderText = "TamanoFinca";
-            this.tamanoFincaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tamanoFincaDataGridViewTextBoxColumn.Name = "tamanoFincaDataGridViewTextBoxColumn";
-            this.tamanoFincaDataGridViewTextBoxColumn.Width = 125;
+            this.Column3.HeaderText = "Tamaño";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
-            // direccionFincaDataGridViewTextBoxColumn
+            // Column4
             // 
-            this.direccionFincaDataGridViewTextBoxColumn.DataPropertyName = "DireccionFinca";
-            this.direccionFincaDataGridViewTextBoxColumn.HeaderText = "DireccionFinca";
-            this.direccionFincaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.direccionFincaDataGridViewTextBoxColumn.Name = "direccionFincaDataGridViewTextBoxColumn";
-            this.direccionFincaDataGridViewTextBoxColumn.Width = 125;
+            this.Column4.HeaderText = "Dirección";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 125;
             // 
-            // telefonoDataGridViewTextBoxColumn
+            // Column5
             // 
-            this.telefonoDataGridViewTextBoxColumn.DataPropertyName = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.HeaderText = "Telefono";
-            this.telefonoDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.telefonoDataGridViewTextBoxColumn.Name = "telefonoDataGridViewTextBoxColumn";
-            this.telefonoDataGridViewTextBoxColumn.Width = 125;
+            this.Column5.HeaderText = "Teléfono";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
             // 
             // PantallaMostrarFinca
             // 
@@ -183,7 +152,6 @@ namespace AgroganaderaMiFinca
             this.Text = "PantallaMostrarFinca";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.fincaBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -191,14 +159,13 @@ namespace AgroganaderaMiFinca
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dgvFinca;
         private System.Windows.Forms.Button btnActualizarFincas;
         private System.Windows.Forms.Button btnAtras;
-        private System.Windows.Forms.DataGridViewTextBoxColumn numeroFincaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreFincaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tamanoFincaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn direccionFincaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn telefonoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource fincaBindingSource;
+        private System.Windows.Forms.DataGridView dgvFinca;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
     }
 }

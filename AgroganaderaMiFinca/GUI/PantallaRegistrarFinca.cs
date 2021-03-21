@@ -14,11 +14,10 @@ namespace AgroganaderaMiFinca
     {
         Validaciones v = new Validaciones();
 
-        Finca[] listaFinca = new Finca[10];
-        int contadorFinca = 0;
+        
 
         public PantallaRegistrarFinca()
-        {
+        { 
             InitializeComponent();
         }
 
@@ -83,19 +82,19 @@ namespace AgroganaderaMiFinca
                 {
                     errorProvider1.SetError(btnRegistrarFinca, "");
 
-                    if (contadorFinca != 10)
+                    if (PantallaMenu.contadorFinca != 10)
                     {
                         int n = dgvFinca.Rows.Add();
 
-                        listaFinca[contadorFinca] = RegistrarRazaAnimal();
+                        PantallaMenu.listaFinca[PantallaMenu.contadorFinca] = RegistrarRazaAnimal();
 
-                        dgvFinca.Rows[n].Cells[0].Value = listaFinca[contadorFinca].NumeroFinca;
-                        dgvFinca.Rows[n].Cells[1].Value = listaFinca[contadorFinca].NombreFinca;
-                        dgvFinca.Rows[n].Cells[2].Value = listaFinca[contadorFinca].TamanoFinca;
-                        dgvFinca.Rows[n].Cells[3].Value = listaFinca[contadorFinca].DireccionFinca;
-                        dgvFinca.Rows[n].Cells[4].Value = listaFinca[contadorFinca].Telefono;
+                        dgvFinca.Rows[n].Cells[0].Value = PantallaMenu.listaFinca[PantallaMenu.contadorFinca].NumeroFinca;
+                        dgvFinca.Rows[n].Cells[1].Value = PantallaMenu.listaFinca[PantallaMenu.contadorFinca].NombreFinca;
+                        dgvFinca.Rows[n].Cells[2].Value = PantallaMenu.listaFinca[PantallaMenu.contadorFinca].TamanoFinca;
+                        dgvFinca.Rows[n].Cells[3].Value = PantallaMenu.listaFinca[PantallaMenu.contadorFinca].DireccionFinca;
+                        dgvFinca.Rows[n].Cells[4].Value = PantallaMenu.listaFinca[PantallaMenu.contadorFinca].Telefono;
 
-                        contadorFinca++;
+                        PantallaMenu.contadorFinca++;
 
                         LimpiarCampos();
                     }
