@@ -12,7 +12,12 @@ namespace AgroganaderaMiFinca
 {
     public partial class PantallaMenu : Form
     {
+        //Listas
         public RazaAnimal[] listaRazaAnimal = new RazaAnimal[10];
+        public static Finca[] listaFinca = new Finca[10];
+        public static int contadorFinca = 0;
+
+        //Controladores
         public int contadorRazaAnimal = 0;
 
         public PantallaMenu()
