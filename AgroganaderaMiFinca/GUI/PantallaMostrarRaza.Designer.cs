@@ -29,51 +29,16 @@ namespace AgroganaderaMiFinca
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.dgvRaza = new System.Windows.Forms.DataGridView();
-            this.razaAnimalBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.codigoRazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descrpcionRazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PantallaMostrarRaza));
             this.btnAtras = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.dgvRaza = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRaza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.razaAnimalBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dgvRaza
-            // 
-            this.dgvRaza.AutoGenerateColumns = false;
-            this.dgvRaza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRaza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.codigoRazaDataGridViewTextBoxColumn,
-            this.descrpcionRazaDataGridViewTextBoxColumn});
-            this.dgvRaza.DataSource = this.razaAnimalBindingSource;
-            this.dgvRaza.Location = new System.Drawing.Point(136, 75);
-            this.dgvRaza.Name = "dgvRaza";
-            this.dgvRaza.RowHeadersWidth = 51;
-            this.dgvRaza.RowTemplate.Height = 24;
-            this.dgvRaza.Size = new System.Drawing.Size(375, 178);
-            this.dgvRaza.TabIndex = 0;
-            // 
-            // razaAnimalBindingSource
-            // 
-            this.razaAnimalBindingSource.DataSource = typeof(AgroganaderaMiFinca.Finca);
-            // 
-            // codigoRazaDataGridViewTextBoxColumn
-            // 
-            this.codigoRazaDataGridViewTextBoxColumn.DataPropertyName = "CodigoRaza";
-            this.codigoRazaDataGridViewTextBoxColumn.HeaderText = "CodigoRaza";
-            this.codigoRazaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.codigoRazaDataGridViewTextBoxColumn.Name = "codigoRazaDataGridViewTextBoxColumn";
-            this.codigoRazaDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // descrpcionRazaDataGridViewTextBoxColumn
-            // 
-            this.descrpcionRazaDataGridViewTextBoxColumn.DataPropertyName = "DescrpcionRaza";
-            this.descrpcionRazaDataGridViewTextBoxColumn.HeaderText = "DescrpcionRaza";
-            this.descrpcionRazaDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.descrpcionRazaDataGridViewTextBoxColumn.Name = "descrpcionRazaDataGridViewTextBoxColumn";
-            this.descrpcionRazaDataGridViewTextBoxColumn.Width = 125;
             // 
             // btnAtras
             // 
@@ -82,7 +47,7 @@ namespace AgroganaderaMiFinca
             this.btnAtras.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAtras.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.Gray;
-            this.btnAtras.Location = new System.Drawing.Point(550, 388);
+            this.btnAtras.Location = new System.Drawing.Point(862, 564);
             this.btnAtras.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(237, 49);
@@ -98,7 +63,7 @@ namespace AgroganaderaMiFinca
             this.btnActualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnActualizar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.Color.Gray;
-            this.btnActualizar.Location = new System.Drawing.Point(13, 388);
+            this.btnActualizar.Location = new System.Drawing.Point(13, 564);
             this.btnActualizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(237, 49);
@@ -107,29 +72,70 @@ namespace AgroganaderaMiFinca
             this.btnActualizar.UseVisualStyleBackColor = false;
             this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.panel1.Controls.Add(this.dgvRaza);
+            this.panel1.Location = new System.Drawing.Point(94, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(916, 456);
+            this.panel1.TabIndex = 33;
+            // 
+            // dgvRaza
+            // 
+            this.dgvRaza.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRaza.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2});
+            this.dgvRaza.Location = new System.Drawing.Point(27, 25);
+            this.dgvRaza.Name = "dgvRaza";
+            this.dgvRaza.RowHeadersWidth = 51;
+            this.dgvRaza.RowTemplate.Height = 24;
+            this.dgvRaza.Size = new System.Drawing.Size(844, 405);
+            this.dgvRaza.TabIndex = 0;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Código";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Descripción";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
             // PantallaMostrarRaza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ClientSize = new System.Drawing.Size(1112, 626);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.btnAtras);
-            this.Controls.Add(this.dgvRaza);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "PantallaMostrarRaza";
-            this.Text = "PantallaMostrarRaza";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Raza de animales";
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRaza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.razaAnimalBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dgvRaza;
         private System.Windows.Forms.DataGridViewTextBoxColumn codigoRazaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn descrpcionRazaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource razaAnimalBindingSource;
         private System.Windows.Forms.Button btnAtras;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DataGridView dgvRaza;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

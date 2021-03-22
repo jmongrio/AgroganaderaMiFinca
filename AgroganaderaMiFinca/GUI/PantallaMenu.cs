@@ -13,12 +13,18 @@ namespace AgroganaderaMiFinca
     public partial class PantallaMenu : Form
     {
         //Listas
-        public RazaAnimal[] listaRazaAnimal = new RazaAnimal[10];
         public static Finca[] listaFinca = new Finca[10];
-        public static int contadorFinca = 0;
+        public static Dueno[] listaDueno = new Dueno[10];
+        public static Empleado[] listaEmpleado = new Empleado[10];
+        public static RazaAnimal[] listaRazaAnimal = new RazaAnimal[10];
+        public static Animal[] listaAnimal = new Animal[10];
 
-        //Controladores
-        public int contadorRazaAnimal = 0;
+        //Controladores        
+        public static int contadorFinca = 0;
+        public static int contadorDueno = 0;
+        public static int contadorEmpleado = 0;
+        public static int contadorRazaAnimal = 0;
+        public static int contadorAnimal = 0;
 
         public PantallaMenu()
         {
@@ -73,10 +79,34 @@ namespace AgroganaderaMiFinca
                 mostrarFinca.ShowDialog();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {            
+        private void button9_Click(object sender, EventArgs e)
+        {
+            using (PantallaMostrarDueno mostrarDueno = new PantallaMostrarDueno())
+                mostrarDueno.ShowDialog();
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            using (PantallaMostrarEmpleado mostrarEmpleado = new PantallaMostrarEmpleado())
+                mostrarEmpleado.ShowDialog();
+        }
+
+        private void btnRazaAnimal_Click(object sender, EventArgs e)
+        {
             using (PantallaMostrarRaza mostrarRaza = new PantallaMostrarRaza())
                 mostrarRaza.ShowDialog();
+        }
+
+        private void btnAnimales_Click(object sender, EventArgs e)
+        {
+            using (PantallaMostarAnimales mostrarAnimal = new PantallaMostarAnimales())
+                mostrarAnimal.ShowDialog();
+        }
+
+        private void btnClasificacionAnimales_Click(object sender, EventArgs e)
+        {
+            using (PantallaMostrarClasificacionAnimales mostrarClasificacion = new PantallaMostrarClasificacionAnimales())
+                mostrarClasificacion.ShowDialog();
         }
     }
 }

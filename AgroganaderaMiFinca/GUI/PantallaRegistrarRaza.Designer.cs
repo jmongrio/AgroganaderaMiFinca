@@ -55,7 +55,6 @@ namespace AgroganaderaMiFinca
             this.pnlRegistroRaza.Name = "pnlRegistroRaza";
             this.pnlRegistroRaza.Size = new System.Drawing.Size(856, 352);
             this.pnlRegistroRaza.TabIndex = 1;
-            this.pnlRegistroRaza.MouseLeave += new System.EventHandler(this.pnlRegistroRaza_MouseLeave);
             // 
             // txtDescripcionRaza
             // 
@@ -120,7 +119,6 @@ namespace AgroganaderaMiFinca
             // btnRegistrarRaza
             // 
             this.btnRegistrarRaza.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.btnRegistrarRaza.Enabled = false;
             this.btnRegistrarRaza.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnRegistrarRaza.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRegistrarRaza.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

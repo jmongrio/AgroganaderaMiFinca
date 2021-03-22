@@ -26,10 +26,25 @@ namespace AgroganaderaMiFinca
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            int n = dgvRaza.Rows.Add();
+            for (int i = 0; i < PantallaMenu.contadorRazaAnimal; i++)
+            {
 
-            dgvRaza.Rows[n].Cells[0].Value = pm.listaRazaAnimal[0];
-            dgvRaza.Rows[n].Cells[1].Value = pm.listaRazaAnimal[1];
+                if (dgvRaza.Rows[i].Cells[0].Value != String.Empty)
+                {
+                    int n = dgvRaza.Rows.Add();
+
+                    dgvRaza.Rows[n].Cells[0].Value = PantallaMenu.listaRazaAnimal[i].CodigoRaza;
+                    dgvRaza.Rows[n].Cells[1].Value = PantallaMenu.listaRazaAnimal[i].DescrpcionRaza;                    
+                }
+                else
+                {
+                    string mensaje = "Se han ingresado todos los registros.";
+                    MessageBoxButtons botones = MessageBoxButtons.OK;
+                    MessageBox.Show(mensaje, "Atención", botones);
+                    i = 9;
+                }
+
+            }
         }
     }
 }

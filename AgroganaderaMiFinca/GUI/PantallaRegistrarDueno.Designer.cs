@@ -59,7 +59,7 @@ namespace AgroganaderaMiFinca
             this.txtNombreDueno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtNombreDueno.ForeColor = System.Drawing.Color.Gray;
             this.txtNombreDueno.Location = new System.Drawing.Point(20, 18);
-            this.txtNombreDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNombreDueno.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombreDueno.Name = "txtNombreDueno";
             this.txtNombreDueno.Size = new System.Drawing.Size(217, 36);
             this.txtNombreDueno.TabIndex = 7;
@@ -96,7 +96,7 @@ namespace AgroganaderaMiFinca
             this.pnlDueno.Controls.Add(this.label1);
             this.pnlDueno.Controls.Add(this.txtNombreDueno);
             this.pnlDueno.Location = new System.Drawing.Point(116, 164);
-            this.pnlDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlDueno.Margin = new System.Windows.Forms.Padding(4);
             this.pnlDueno.Name = "pnlDueno";
             this.pnlDueno.Size = new System.Drawing.Size(856, 352);
             this.pnlDueno.TabIndex = 8;
@@ -107,7 +107,7 @@ namespace AgroganaderaMiFinca
             this.cmbFincaDueno.ForeColor = System.Drawing.Color.Gray;
             this.cmbFincaDueno.FormattingEnabled = true;
             this.cmbFincaDueno.Location = new System.Drawing.Point(311, 263);
-            this.cmbFincaDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cmbFincaDueno.Margin = new System.Windows.Forms.Padding(4);
             this.cmbFincaDueno.Name = "cmbFincaDueno";
             this.cmbFincaDueno.Size = new System.Drawing.Size(237, 37);
             this.cmbFincaDueno.TabIndex = 19;
@@ -117,8 +117,7 @@ namespace AgroganaderaMiFinca
             this.txtNumeroCelularDueno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtNumeroCelularDueno.ForeColor = System.Drawing.Color.Gray;
             this.txtNumeroCelularDueno.Location = new System.Drawing.Point(311, 214);
-            this.txtNumeroCelularDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.txtNumeroCelularDueno.Mask = "0000-0000";
+            this.txtNumeroCelularDueno.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumeroCelularDueno.Name = "txtNumeroCelularDueno";
             this.txtNumeroCelularDueno.Size = new System.Drawing.Size(237, 36);
             this.txtNumeroCelularDueno.TabIndex = 18;
@@ -130,7 +129,7 @@ namespace AgroganaderaMiFinca
             this.txtCorreoElectronicoDueno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtCorreoElectronicoDueno.ForeColor = System.Drawing.Color.Gray;
             this.txtCorreoElectronicoDueno.Location = new System.Drawing.Point(311, 159);
-            this.txtCorreoElectronicoDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCorreoElectronicoDueno.Margin = new System.Windows.Forms.Padding(4);
             this.txtCorreoElectronicoDueno.Name = "txtCorreoElectronicoDueno";
             this.txtCorreoElectronicoDueno.Size = new System.Drawing.Size(237, 36);
             this.txtCorreoElectronicoDueno.TabIndex = 17;
@@ -142,7 +141,7 @@ namespace AgroganaderaMiFinca
             this.txtIdentificacionDueno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtIdentificacionDueno.ForeColor = System.Drawing.Color.Gray;
             this.txtIdentificacionDueno.Location = new System.Drawing.Point(311, 106);
-            this.txtIdentificacionDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtIdentificacionDueno.Margin = new System.Windows.Forms.Padding(4);
             this.txtIdentificacionDueno.Name = "txtIdentificacionDueno";
             this.txtIdentificacionDueno.Size = new System.Drawing.Size(237, 36);
             this.txtIdentificacionDueno.TabIndex = 16;
@@ -154,7 +153,7 @@ namespace AgroganaderaMiFinca
             this.txtSegundoApellidoDueno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtSegundoApellidoDueno.ForeColor = System.Drawing.Color.Gray;
             this.txtSegundoApellidoDueno.Location = new System.Drawing.Point(572, 18);
-            this.txtSegundoApellidoDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtSegundoApellidoDueno.Margin = new System.Windows.Forms.Padding(4);
             this.txtSegundoApellidoDueno.Name = "txtSegundoApellidoDueno";
             this.txtSegundoApellidoDueno.Size = new System.Drawing.Size(267, 36);
             this.txtSegundoApellidoDueno.TabIndex = 15;
@@ -166,7 +165,7 @@ namespace AgroganaderaMiFinca
             this.txtPrimerApellidoDueno.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold);
             this.txtPrimerApellidoDueno.ForeColor = System.Drawing.Color.Gray;
             this.txtPrimerApellidoDueno.Location = new System.Drawing.Point(273, 18);
-            this.txtPrimerApellidoDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtPrimerApellidoDueno.Margin = new System.Windows.Forms.Padding(4);
             this.txtPrimerApellidoDueno.Name = "txtPrimerApellidoDueno";
             this.txtPrimerApellidoDueno.Size = new System.Drawing.Size(237, 36);
             this.txtPrimerApellidoDueno.TabIndex = 14;
@@ -253,7 +252,7 @@ namespace AgroganaderaMiFinca
             this.btnAtras.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAtras.ForeColor = System.Drawing.Color.Gray;
             this.btnAtras.Location = new System.Drawing.Point(859, 562);
-            this.btnAtras.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAtras.Margin = new System.Windows.Forms.Padding(4);
             this.btnAtras.Name = "btnAtras";
             this.btnAtras.Size = new System.Drawing.Size(237, 49);
             this.btnAtras.TabIndex = 20;
@@ -269,12 +268,13 @@ namespace AgroganaderaMiFinca
             this.btnRegistrarDueno.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRegistrarDueno.ForeColor = System.Drawing.Color.Gray;
             this.btnRegistrarDueno.Location = new System.Drawing.Point(17, 562);
-            this.btnRegistrarDueno.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegistrarDueno.Margin = new System.Windows.Forms.Padding(4);
             this.btnRegistrarDueno.Name = "btnRegistrarDueno";
             this.btnRegistrarDueno.Size = new System.Drawing.Size(237, 49);
             this.btnRegistrarDueno.TabIndex = 21;
             this.btnRegistrarDueno.Text = "Registrar";
             this.btnRegistrarDueno.UseVisualStyleBackColor = false;
+            this.btnRegistrarDueno.Click += new System.EventHandler(this.btnRegistrarDueno_Click);
             // 
             // errorProvider1
             // 
@@ -304,11 +304,12 @@ namespace AgroganaderaMiFinca
             this.Controls.Add(this.pnlDueno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "PantallaRegistrarDueno";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de dueño";
+            this.Load += new System.EventHandler(this.PantallaRegistrarDueno_Load);
             this.pnlDueno.ResumeLayout(false);
             this.pnlDueno.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
