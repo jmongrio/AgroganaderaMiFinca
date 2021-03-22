@@ -114,6 +114,7 @@ namespace AgroganaderaMiFinca
             this.txtSegundoApellidoEmpleado.Size = new System.Drawing.Size(267, 36);
             this.txtSegundoApellidoEmpleado.TabIndex = 23;
             this.txtSegundoApellidoEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtSegundoApellidoEmpleado.TextChanged += new System.EventHandler(this.txtSegundoApellidoEmpleado_TextChanged);
             // 
             // txtPrimerApellidoEmpleado
             // 
@@ -125,6 +126,7 @@ namespace AgroganaderaMiFinca
             this.txtPrimerApellidoEmpleado.Size = new System.Drawing.Size(237, 36);
             this.txtPrimerApellidoEmpleado.TabIndex = 22;
             this.txtPrimerApellidoEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtPrimerApellidoEmpleado.TextChanged += new System.EventHandler(this.txtPrimerApellidoEmpleado_TextChanged);
             // 
             // label4
             // 
@@ -184,6 +186,7 @@ namespace AgroganaderaMiFinca
             this.txtNombreEmpleado.Size = new System.Drawing.Size(217, 36);
             this.txtNombreEmpleado.TabIndex = 18;
             this.txtNombreEmpleado.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtNombreEmpleado.TextChanged += new System.EventHandler(this.txtNombreEmpleado_TextChanged);
             // 
             // label8
             // 
@@ -211,6 +214,7 @@ namespace AgroganaderaMiFinca
             this.btnRegistrarEmpleado.TabIndex = 23;
             this.btnRegistrarEmpleado.Text = "Registrar";
             this.btnRegistrarEmpleado.UseVisualStyleBackColor = false;
+            this.btnRegistrarEmpleado.Click += new System.EventHandler(this.btnRegistrarEmpleado_Click);
             // 
             // btnAtras
             // 

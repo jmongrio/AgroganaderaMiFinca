@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AgroganaderaMiFinca
 {
-    class Animal
+    public class Animal
     {
         private int identificacion;
         private string nombre;

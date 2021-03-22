@@ -92,6 +92,7 @@ namespace AgroganaderaMiFinca
             this.txtPadreAnimal.TabIndex = 45;
             this.txtPadreAnimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtPadreAnimal.ValidatingType = typeof(System.DateTime);
+            this.txtPadreAnimal.TextChanged += new System.EventHandler(this.txtPadreAnimal_TextChanged);
             // 
             // label9
             // 
@@ -116,6 +117,7 @@ namespace AgroganaderaMiFinca
             this.txtMadreAnimal.TabIndex = 43;
             this.txtMadreAnimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtMadreAnimal.ValidatingType = typeof(System.DateTime);
+            this.txtMadreAnimal.TextChanged += new System.EventHandler(this.txtMadreAnimal_TextChanged);
             // 
             // label4
             // 
@@ -157,7 +159,6 @@ namespace AgroganaderaMiFinca
             this.txtFechaNacimientoAnimal.ForeColor = System.Drawing.Color.Gray;
             this.txtFechaNacimientoAnimal.Location = new System.Drawing.Point(533, 79);
             this.txtFechaNacimientoAnimal.Margin = new System.Windows.Forms.Padding(4);
-            this.txtFechaNacimientoAnimal.Mask = "00/00/0000";
             this.txtFechaNacimientoAnimal.Name = "txtFechaNacimientoAnimal";
             this.txtFechaNacimientoAnimal.Size = new System.Drawing.Size(284, 36);
             this.txtFechaNacimientoAnimal.TabIndex = 39;
@@ -294,6 +295,7 @@ namespace AgroganaderaMiFinca
             this.btnRegistrarAnimal.TabIndex = 17;
             this.btnRegistrarAnimal.Text = "Registrar";
             this.btnRegistrarAnimal.UseVisualStyleBackColor = false;
+            this.btnRegistrarAnimal.Click += new System.EventHandler(this.btnRegistrarAnimal_Click);
             // 
             // btnAtras
             // 
@@ -331,6 +333,7 @@ namespace AgroganaderaMiFinca
             this.Name = "PantallaRegistrarAnimal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro de Animales";
+            this.Load += new System.EventHandler(this.PantallaRegistrarAnimal_Load);
             this.pnlRegistroFinca.ResumeLayout(false);
             this.pnlRegistroFinca.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();

@@ -14,8 +14,6 @@ namespace AgroganaderaMiFinca
     {
         Validaciones v = new Validaciones();
 
-        PantallaMenu pm = new PantallaMenu();
-
         public PantallaRegistrarRaza()
         {
             InitializeComponent();
@@ -23,8 +21,6 @@ namespace AgroganaderaMiFinca
 
         private void btnAtras_Click(object sender, EventArgs e)
         {
-            
-
             this.Close();
         }
 
@@ -37,54 +33,84 @@ namespace AgroganaderaMiFinca
         {
             v.comprobarEspaciosVacios(txtDescripcionRaza, btnRegistrarRaza, errorProvider1);            
         }
-        private void pnlRegistroRaza_MouseLeave(object sender, EventArgs e)
-        {
-            activarBoton();
-        }
-
-        //Controlador de espacios vacios.
-        public void activarBoton()
-        {
-            if ((txtCodigoRaza.Text.Trim() != string.Empty) && (txtDescripcionRaza.Text.Trim() != string.Empty))
-            {
-                errorProvider1.SetError(pnlRegistroRaza, "");
-                btnRegistrarRaza.Enabled = true;
-            }
-            else
-            {
-                errorProvider1.SetError(pnlRegistroRaza, "Hay algún espacio sin llenar!.");
-                btnRegistrarRaza.Enabled = false;
-            }
-        }
-
-        /*
-         * RegistrarRazaAnimal()
-         * Se crea un objeto 'nuevaRazaAnimal' que almacena los datos que se solicitan.
-         * al final regresa los datos guardados en nuevaRazaAnimal.
-         * Se puede almacenar en un array de tipo RazaAnimal.
-         */
-        public RazaAnimal RegistrarRazaAnimal()
-        {
-            RazaAnimal nuevaRazaAnimal = new RazaAnimal();
-
-            nuevaRazaAnimal.CodigoRaza = Convert.ToInt32(txtCodigoRaza.Text);
-            nuevaRazaAnimal.DescrpcionRaza = txtDescripcionRaza.Text;
-
-            return nuevaRazaAnimal;
-        }
 
         public void btnRegistrarRaza_Click(object sender, EventArgs e)
         {
-            if (pm.listaRazaAnimal.Length == pm.contadorRazaAnimal)
+            try
             {
-                //Err
-                errorProvider1.SetError(btnRegistrarRaza, "¡Ya no quedan espacios para guardar¡");
+                if (ComprobarEspaciosVacios() == true)
+                {
+                    errorProvider1.SetError(btnRegistrarRaza, "");
+
+                    if (PantallaMenu.contadorRazaAnimal != 10)
+                    {
+                        PantallaMenu.listaRazaAnimal[PantallaMenu.contadorRazaAnimal] = RegistrarRaza();
+
+                        PantallaMenu.contadorRazaAnimal++;
+
+                        string mensaje = "Se ha agregado los datos correctamente.";
+                        MessageBoxButtons botones = MessageBoxButtons.OK;
+                        MessageBox.Show(mensaje, "Listo", botones);
+
+                        LimpiarCampos();
+                    }
+                    else
+                    {
+                        string mensaje = "Se ha llegado al número maximo de dueños (10).";
+                        MessageBoxButtons botones = MessageBoxButtons.OK;
+                        MessageBox.Show(mensaje, "Error", botones);
+                    }
+                }
+                else
+                {
+                    string mensaje = "Existen espacios sin llenar.";
+                    MessageBoxButtons botones = MessageBoxButtons.OK;
+                    MessageBox.Show(mensaje, "Error", botones);
+                    errorProvider1.SetError(btnRegistrarRaza, "Existen espacios sin llenar.");
+                }
             }
-            else
+            catch (Exception i)
             {
-                pm.listaRazaAnimal[pm.contadorRazaAnimal] = RegistrarRazaAnimal(); ;
-                pm.contadorRazaAnimal++;
+                string mensaje = "Ha ocurrido un error: " + i;
+                MessageBoxButtons botones = MessageBoxButtons.OK;
+                MessageBox.Show(mensaje, "Error", botones);
             }
+        }
+
+        public RazaAnimal RegistrarRaza()
+        {
+            RazaAnimal nuevaRaza = new RazaAnimal();
+
+            try
+            {
+                nuevaRaza.CodigoRaza = Convert.ToInt32(txtCodigoRaza.Text);
+                nuevaRaza.DescrpcionRaza = txtDescripcionRaza.Text;
+            }
+            catch (Exception e)
+            {
+                string mensaje = "Ha ocurrido un error: " + e;
+                MessageBoxButtons botones = MessageBoxButtons.OK;
+                MessageBox.Show(mensaje, "Error", botones);
+            }
+
+            return nuevaRaza;
+        }
+
+        public bool ComprobarEspaciosVacios() //Evalua que todos los campor esten llenos.
+        {
+            bool vacio = false;
+            if ((txtCodigoRaza.Text.Trim() != string.Empty) && (txtDescripcionRaza.Text.Trim() != string.Empty))
+            {
+                vacio = true;
+            }
+
+            return vacio;
+        }
+
+        public void LimpiarCampos() //Reestablece los campos
+        {
+            txtCodigoRaza.Text = "";
+            txtDescripcionRaza.Text = "";
         }
     }
 }

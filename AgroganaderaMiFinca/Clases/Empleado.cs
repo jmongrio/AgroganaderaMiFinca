@@ -2,7 +2,7 @@
 
 namespace AgroganaderaMiFinca
 {
-    class Empleado : Persona
+    public class Empleado : Persona
     {
         private double salario;
         public Empleado(int identificacion, string nombre, string primerAppellido, string segundoApellido, double salario) 

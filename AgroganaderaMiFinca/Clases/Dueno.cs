@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AgroganaderaMiFinca
 {
-    class Dueno : Persona
+    public class Dueno : Persona
     {
         string correoElectronico;
         int numeroCelular;
