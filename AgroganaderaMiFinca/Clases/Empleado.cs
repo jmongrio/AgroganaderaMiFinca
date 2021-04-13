@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AgroganaderaMiFinca
+namespace Cliente
 {
     public class Empleado : Persona
     {

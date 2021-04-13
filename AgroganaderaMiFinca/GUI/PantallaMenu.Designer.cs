@@ -1,5 +1,5 @@
 ﻿
-namespace AgroganaderaMiFinca
+namespace Cliente
 {
     partial class PantallaMenu
     {
@@ -60,10 +60,9 @@ namespace AgroganaderaMiFinca
             this.pnlRegistro.Controls.Add(this.button3);
             this.pnlRegistro.Controls.Add(this.button2);
             this.pnlRegistro.Controls.Add(this.button1);
-            this.pnlRegistro.Location = new System.Drawing.Point(44, 143);
-            this.pnlRegistro.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlRegistro.Location = new System.Drawing.Point(33, 116);
             this.pnlRegistro.Name = "pnlRegistro";
-            this.pnlRegistro.Size = new System.Drawing.Size(485, 406);
+            this.pnlRegistro.Size = new System.Drawing.Size(364, 330);
             this.pnlRegistro.TabIndex = 1;
             // 
             // button5
@@ -73,10 +72,9 @@ namespace AgroganaderaMiFinca
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.Gray;
-            this.button5.Location = new System.Drawing.Point(116, 293);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(87, 238);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(237, 49);
+            this.button5.Size = new System.Drawing.Size(178, 40);
             this.button5.TabIndex = 4;
             this.button5.Text = "Animales";
             this.button5.UseVisualStyleBackColor = false;
@@ -89,10 +87,9 @@ namespace AgroganaderaMiFinca
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Gray;
-            this.button4.Location = new System.Drawing.Point(116, 234);
-            this.button4.Margin = new System.Windows.Forms.Padding(4);
+            this.button4.Location = new System.Drawing.Point(87, 190);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(237, 49);
+            this.button4.Size = new System.Drawing.Size(178, 40);
             this.button4.TabIndex = 3;
             this.button4.Text = "Raza de animales";
             this.button4.UseVisualStyleBackColor = false;
@@ -105,10 +102,9 @@ namespace AgroganaderaMiFinca
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.Color.Gray;
-            this.button3.Location = new System.Drawing.Point(116, 174);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(87, 141);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 49);
+            this.button3.Size = new System.Drawing.Size(178, 40);
             this.button3.TabIndex = 2;
             this.button3.Text = "Empleado";
             this.button3.UseVisualStyleBackColor = false;
@@ -121,10 +117,9 @@ namespace AgroganaderaMiFinca
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Gray;
-            this.button2.Location = new System.Drawing.Point(116, 113);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(87, 92);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 49);
+            this.button2.Size = new System.Drawing.Size(178, 40);
             this.button2.TabIndex = 1;
             this.button2.Text = "Dueño";
             this.button2.UseVisualStyleBackColor = false;
@@ -137,10 +132,9 @@ namespace AgroganaderaMiFinca
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Gray;
-            this.button1.Location = new System.Drawing.Point(116, 54);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(87, 44);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 49);
+            this.button1.Size = new System.Drawing.Size(178, 40);
             this.button1.TabIndex = 0;
             this.button1.Text = "Finca";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,10 +151,9 @@ namespace AgroganaderaMiFinca
             this.pnlMostrar.Controls.Add(this.button8);
             this.pnlMostrar.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlMostrar.ForeColor = System.Drawing.Color.White;
-            this.pnlMostrar.Location = new System.Drawing.Point(564, 143);
-            this.pnlMostrar.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlMostrar.Location = new System.Drawing.Point(423, 116);
             this.pnlMostrar.Name = "pnlMostrar";
-            this.pnlMostrar.Size = new System.Drawing.Size(485, 406);
+            this.pnlMostrar.Size = new System.Drawing.Size(364, 330);
             this.pnlMostrar.TabIndex = 2;
             // 
             // btnAnimales
@@ -170,10 +163,9 @@ namespace AgroganaderaMiFinca
             this.btnAnimales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAnimales.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAnimales.ForeColor = System.Drawing.Color.Gray;
-            this.btnAnimales.Location = new System.Drawing.Point(133, 265);
-            this.btnAnimales.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAnimales.Location = new System.Drawing.Point(100, 215);
             this.btnAnimales.Name = "btnAnimales";
-            this.btnAnimales.Size = new System.Drawing.Size(237, 49);
+            this.btnAnimales.Size = new System.Drawing.Size(178, 40);
             this.btnAnimales.TabIndex = 10;
             this.btnAnimales.Text = "Animales";
             this.btnAnimales.UseVisualStyleBackColor = false;
@@ -186,10 +178,9 @@ namespace AgroganaderaMiFinca
             this.btnRazaAnimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRazaAnimal.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRazaAnimal.ForeColor = System.Drawing.Color.Gray;
-            this.btnRazaAnimal.Location = new System.Drawing.Point(133, 206);
-            this.btnRazaAnimal.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRazaAnimal.Location = new System.Drawing.Point(100, 167);
             this.btnRazaAnimal.Name = "btnRazaAnimal";
-            this.btnRazaAnimal.Size = new System.Drawing.Size(237, 49);
+            this.btnRazaAnimal.Size = new System.Drawing.Size(178, 40);
             this.btnRazaAnimal.TabIndex = 9;
             this.btnRazaAnimal.Text = "Raza de animales";
             this.btnRazaAnimal.UseVisualStyleBackColor = false;
@@ -202,10 +193,9 @@ namespace AgroganaderaMiFinca
             this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button10.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ForeColor = System.Drawing.Color.Gray;
-            this.button10.Location = new System.Drawing.Point(133, 26);
-            this.button10.Margin = new System.Windows.Forms.Padding(4);
+            this.button10.Location = new System.Drawing.Point(100, 21);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(237, 49);
+            this.button10.Size = new System.Drawing.Size(178, 40);
             this.button10.TabIndex = 5;
             this.button10.Text = "Fincas";
             this.button10.UseVisualStyleBackColor = false;
@@ -218,10 +208,9 @@ namespace AgroganaderaMiFinca
             this.btnClasificacionAnimales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClasificacionAnimales.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClasificacionAnimales.ForeColor = System.Drawing.Color.Gray;
-            this.btnClasificacionAnimales.Location = new System.Drawing.Point(133, 325);
-            this.btnClasificacionAnimales.Margin = new System.Windows.Forms.Padding(4);
+            this.btnClasificacionAnimales.Location = new System.Drawing.Point(100, 264);
             this.btnClasificacionAnimales.Name = "btnClasificacionAnimales";
-            this.btnClasificacionAnimales.Size = new System.Drawing.Size(237, 56);
+            this.btnClasificacionAnimales.Size = new System.Drawing.Size(178, 46);
             this.btnClasificacionAnimales.TabIndex = 8;
             this.btnClasificacionAnimales.Text = "Clasificación de animales";
             this.btnClasificacionAnimales.UseVisualStyleBackColor = false;
@@ -234,10 +223,9 @@ namespace AgroganaderaMiFinca
             this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button9.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.Color.Gray;
-            this.button9.Location = new System.Drawing.Point(133, 85);
-            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Location = new System.Drawing.Point(100, 69);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(237, 49);
+            this.button9.Size = new System.Drawing.Size(178, 40);
             this.button9.TabIndex = 6;
             this.button9.Text = "Dueños";
             this.button9.UseVisualStyleBackColor = false;
@@ -250,10 +238,9 @@ namespace AgroganaderaMiFinca
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.Color.Gray;
-            this.button8.Location = new System.Drawing.Point(133, 146);
-            this.button8.Margin = new System.Windows.Forms.Padding(4);
+            this.button8.Location = new System.Drawing.Point(100, 119);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(237, 49);
+            this.button8.Size = new System.Drawing.Size(178, 40);
             this.button8.TabIndex = 7;
             this.button8.Text = "Empleados";
             this.button8.UseVisualStyleBackColor = false;
@@ -266,10 +253,9 @@ namespace AgroganaderaMiFinca
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Gray;
-            this.btnSalir.Location = new System.Drawing.Point(859, 562);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSalir.Location = new System.Drawing.Point(644, 457);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(237, 49);
+            this.btnSalir.Size = new System.Drawing.Size(178, 40);
             this.btnSalir.TabIndex = 10;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -280,10 +266,9 @@ namespace AgroganaderaMiFinca
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(215, 111);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(161, 90);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(138, 29);
+            this.label2.Size = new System.Drawing.Size(109, 23);
             this.label2.TabIndex = 11;
             this.label2.Text = "Registrar";
             // 
@@ -292,10 +277,9 @@ namespace AgroganaderaMiFinca
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(745, 111);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(559, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(117, 29);
+            this.label3.Size = new System.Drawing.Size(92, 23);
             this.label3.TabIndex = 12;
             this.label3.Text = "Mostrar";
             // 
@@ -304,31 +288,29 @@ namespace AgroganaderaMiFinca
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(721, 11);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(680, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(355, 48);
+            this.label4.Size = new System.Drawing.Size(142, 38);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Menú principal";
+            this.label4.Text = "Cliente";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(16, 569);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 462);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(539, 48);
+            this.label1.Size = new System.Drawing.Size(427, 38);
             this.label1.TabIndex = 14;
             this.label1.Text = "Agroganadera Mi Finca";
             // 
             // PantallaMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1112, 626);
+            this.ClientSize = new System.Drawing.Size(834, 509);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -339,7 +321,6 @@ namespace AgroganaderaMiFinca
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "PantallaMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
