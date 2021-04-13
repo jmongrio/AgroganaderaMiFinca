@@ -1,5 +1,5 @@
 ﻿
-namespace AgroganaderaMiFinca
+namespace Cliente
 {
     partial class PantallaRegistrarEmpleado
     {

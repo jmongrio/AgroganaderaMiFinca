@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AgroganaderaMiFinca
+namespace Cliente
 {
     public class RazaAnimal
     {
