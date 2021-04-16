@@ -10,7 +10,7 @@ namespace Servidor
 {
     class Conexion
     {
-
+        /*
         public static SqlConnection Conectar()
         {
             SqlConnection conexion = new SqlConnection("JASON\SQLEXPRESS; DATABASE = MIFINCA; Integrated Security=True");
@@ -19,5 +19,6 @@ namespace Servidor
 
             return conexion;
         }
+        */
     }
 }
