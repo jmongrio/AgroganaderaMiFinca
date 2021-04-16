@@ -79,5 +79,15 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AgroganaderaMiFinca\Cliente.csproj">
+      <Project>{9765a949-6806-4892-86eb-e97043ac6c9e}</Project>
+      <Name>Cliente</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servidor\Servidor.csproj">
+      <Project>{f24b444f-154f-450f-93e4-21f4928cc6ff}</Project>
+      <Name>Servidor</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

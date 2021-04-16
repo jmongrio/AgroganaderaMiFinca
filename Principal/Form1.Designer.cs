@@ -34,11 +34,12 @@ namespace Principal
             this.label1 = new System.Windows.Forms.Label();
             this.btnSalir = new System.Windows.Forms.Button();
             this.pnlRegistro = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnServidor = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCliente = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.lbl1 = new System.Windows.Forms.Label();
             this.lblEstadoConexion = new System.Windows.Forms.Label();
             this.pnlRegistro.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -49,7 +50,8 @@ namespace Principal
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Gray;
-            this.label4.Location = new System.Drawing.Point(541, 9);
+            this.label4.Location = new System.Drawing.Point(818, 9);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(281, 38);
             this.label4.TabIndex = 14;
@@ -60,7 +62,8 @@ namespace Principal
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gray;
-            this.label1.Location = new System.Drawing.Point(12, 462);
+            this.label1.Location = new System.Drawing.Point(16, 569);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(427, 38);
             this.label1.TabIndex = 16;
@@ -73,9 +76,10 @@ namespace Principal
             this.btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSalir.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir.ForeColor = System.Drawing.Color.Gray;
-            this.btnSalir.Location = new System.Drawing.Point(644, 457);
+            this.btnSalir.Location = new System.Drawing.Point(859, 562);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(178, 40);
+            this.btnSalir.Size = new System.Drawing.Size(237, 49);
             this.btnSalir.TabIndex = 15;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = false;
@@ -84,55 +88,62 @@ namespace Principal
             // pnlRegistro
             // 
             this.pnlRegistro.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.pnlRegistro.Controls.Add(this.button1);
-            this.pnlRegistro.Location = new System.Drawing.Point(17, 201);
+            this.pnlRegistro.Controls.Add(this.btnServidor);
+            this.pnlRegistro.Location = new System.Drawing.Point(23, 247);
+            this.pnlRegistro.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlRegistro.Name = "pnlRegistro";
-            this.pnlRegistro.Size = new System.Drawing.Size(364, 184);
+            this.pnlRegistro.Size = new System.Drawing.Size(485, 226);
             this.pnlRegistro.TabIndex = 17;
             // 
-            // button1
+            // btnServidor
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.Gray;
-            this.button1.Location = new System.Drawing.Point(89, 72);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(178, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Servidor";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnServidor.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnServidor.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnServidor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnServidor.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnServidor.ForeColor = System.Drawing.Color.Gray;
+            this.btnServidor.Location = new System.Drawing.Point(119, 89);
+            this.btnServidor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnServidor.Name = "btnServidor";
+            this.btnServidor.Size = new System.Drawing.Size(237, 49);
+            this.btnServidor.TabIndex = 0;
+            this.btnServidor.Text = "Servidor";
+            this.btnServidor.UseVisualStyleBackColor = false;
+            this.btnServidor.Click += new System.EventHandler(this.btnServidor_Click);
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Location = new System.Drawing.Point(456, 201);
+            this.panel1.Controls.Add(this.btnCliente);
+            this.panel1.Location = new System.Drawing.Point(608, 247);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(364, 184);
+            this.panel1.Size = new System.Drawing.Size(485, 226);
             this.panel1.TabIndex = 18;
             // 
-            // button2
+            // btnCliente
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.Gray;
-            this.button2.Location = new System.Drawing.Point(100, 72);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(178, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Cliente";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCliente.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnCliente.FlatAppearance.BorderColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCliente.Font = new System.Drawing.Font("Verdana", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCliente.ForeColor = System.Drawing.Color.Gray;
+            this.btnCliente.Location = new System.Drawing.Point(133, 89);
+            this.btnCliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCliente.Name = "btnCliente";
+            this.btnCliente.Size = new System.Drawing.Size(237, 49);
+            this.btnCliente.TabIndex = 0;
+            this.btnCliente.Text = "Cliente";
+            this.btnCliente.UseVisualStyleBackColor = false;
+            this.btnCliente.Click += new System.EventHandler(this.btnCliente_Click);
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Gray;
-            this.label2.Location = new System.Drawing.Point(142, 175);
+            this.label2.Location = new System.Drawing.Point(189, 215);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 19;
@@ -143,30 +154,45 @@ namespace Principal
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Gray;
-            this.label3.Location = new System.Drawing.Point(594, 175);
+            this.label3.Location = new System.Drawing.Point(792, 215);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 23);
             this.label3.TabIndex = 20;
             this.label3.Text = "Cliente";
+            // 
+            // lbl1
+            // 
+            this.lbl1.AutoSize = true;
+            this.lbl1.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl1.ForeColor = System.Drawing.Color.Gray;
+            this.lbl1.Location = new System.Drawing.Point(20, 91);
+            this.lbl1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbl1.Name = "lbl1";
+            this.lbl1.Size = new System.Drawing.Size(97, 23);
+            this.lbl1.TabIndex = 21;
+            this.lbl1.Text = "Estado: ";
             // 
             // lblEstadoConexion
             // 
             this.lblEstadoConexion.AutoSize = true;
             this.lblEstadoConexion.Font = new System.Drawing.Font("Verdana", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstadoConexion.ForeColor = System.Drawing.Color.Gray;
-            this.lblEstadoConexion.Location = new System.Drawing.Point(15, 74);
+            this.lblEstadoConexion.Location = new System.Drawing.Point(189, 91);
+            this.lblEstadoConexion.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstadoConexion.Name = "lblEstadoConexion";
-            this.lblEstadoConexion.Size = new System.Drawing.Size(100, 23);
-            this.lblEstadoConexion.TabIndex = 21;
-            this.lblEstadoConexion.Text = "Servidor";
+            this.lblEstadoConexion.Size = new System.Drawing.Size(160, 23);
+            this.lblEstadoConexion.TabIndex = 22;
+            this.lblEstadoConexion.Text = "Desconectado";
             // 
             // Cliente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(834, 509);
+            this.ClientSize = new System.Drawing.Size(1112, 626);
             this.Controls.Add(this.lblEstadoConexion);
+            this.Controls.Add(this.lbl1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.panel1);
@@ -177,6 +203,7 @@ namespace Principal
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "Cliente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -194,11 +221,12 @@ namespace Principal
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Panel pnlRegistro;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnServidor;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCliente;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbl1;
         private System.Windows.Forms.Label lblEstadoConexion;
     }
 }

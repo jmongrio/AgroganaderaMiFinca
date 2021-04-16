@@ -4,14 +4,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cliente", "AgroganaderaMiFinca\Cliente.csproj", "{9765A949-6806-4892-86EB-E97043AC6C9E}"
-	ProjectSection(ProjectDependencies) = postProject
-		{0F967B29-EFA9-4E4D-8CEC-89CEF05EF02F} = {0F967B29-EFA9-4E4D-8CEC-89CEF05EF02F}
-		{F24B444F-154F-450F-93E4-21F4928CC6FF} = {F24B444F-154F-450F-93E4-21F4928CC6FF}
-	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servidor", "Servidor\Servidor.csproj", "{F24B444F-154F-450F-93E4-21F4928CC6FF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Principal", "Principal\Principal.csproj", "{0F967B29-EFA9-4E4D-8CEC-89CEF05EF02F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9765A949-6806-4892-86EB-E97043AC6C9E} = {9765A949-6806-4892-86EB-E97043AC6C9E}
+		{F24B444F-154F-450F-93E4-21F4928CC6FF} = {F24B444F-154F-450F-93E4-21F4928CC6FF}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
